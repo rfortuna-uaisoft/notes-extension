@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Nota Rápida",
+  "version": "2.0.0",
+  "description": "Post-it no painel lateral: escreva ou envie texto da página e salve como .txt na pasta que você escolher.",
+  "minimum_chrome_version": "116",
+  "permissions": ["sidePanel", "storage", "contextMenus", "scripting", "activeTab", "clipboardRead"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "action": {
+    "default_title": "Nota Rápida"
+  },
+  "commands": {
+    "abrir-nota": {
+      "suggested_key": {
+        "default": "Alt+N"
+      },
+      "description": "Abrir a Nota Rápida"
+    },
+    "enviar-selecao": {
+      "suggested_key": {
+        "default": "Alt+Shift+N"
+      },
+      "description": "Enviar o texto selecionado para a nota"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nota Rápida</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <main class="postit">
+    <input id="titulo" type="text" placeholder="Título" maxlength="80" autocomplete="off">
+    <textarea id="corpo" placeholder="Escreva, cole ou envie um trecho da página (botão direito ou Alt+Shift+N)..."></textarea>
+    <div id="aviso" role="status"></div>
+    <div class="barra">
+      <button id="pasta" class="sec" type="button" title="Escolher a pasta onde as notas serão salvas">📁 <span id="pastaNome">Escolher pasta</span></button>
+      <button id="colar" class="sec" type="button" title="Colar o que está na área de transferência">📋 Colar</button>
+      <button id="descartar" class="sec" type="button">Descartar</button>
+      <button id="salvar" type="button">Salvar <kbd>Ctrl+Enter</kbd></button>
+    </div>
+  </main>
+  <script src="panel.js"></script>
+</body>
+</html>
